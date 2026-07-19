@@ -1,0 +1,67 @@
+[
+  {
+    "_id": "inq-1",
+    "name": "Rajesh K.",
+    "email": "rajesh@builders.com",
+    "phone": "+91 99887 76655",
+    "businessType": "Builder",
+    "companyName": "RK Builders & Developers",
+    "city": "Mumbai",
+    "message": "Looking for 5000 sq ft vitrified tiles for upcoming high-rise project.",
+    "status": "Pending",
+    "createdAt": "2026-07-17T02:05:04.147Z",
+    "updatedAt": "2026-07-17T02:05:04.147Z"
+  },
+  {
+    "_id": "inq-2",
+    "name": "Ananya S.",
+    "email": "ananya@studiodesign.in",
+    "phone": "+91 91234 56789",
+    "businessType": "Interior Designer",
+    "companyName": "Ananya Studio Design",
+    "city": "Pune",
+    "message": "Requesting catalog and samples of PVD gold finished luxury bath tiles.",
+    "status": "Contacted",
+    "createdAt": "2026-07-16T04:05:04.147Z",
+    "updatedAt": "2026-07-16T04:05:04.147Z"
+  },
+  {
+    "_id": "inq-3",
+    "name": "Vikram R.",
+    "email": "vikram@stoneimporters.com",
+    "phone": "+91 98765 00011",
+    "businessType": "Distributor",
+    "companyName": "Vikram Stone Imports",
+    "city": "Delhi",
+    "message": "Interested in becoming official regional distributor for northern region.",
+    "status": "Approved",
+    "createdAt": "2026-07-15T04:05:04.147Z",
+    "updatedAt": "2026-07-15T04:05:04.147Z"
+  },
+  {
+    "_id": "inq-1784261104147",
+    "name": "Rajeev Test",
+    "email": "test@rajeev.com",
+    "phone": "+91 99999 99999",
+    "businessType": "Dealer",
+    "companyName": "Rajeev Luxury Showroom",
+    "city": "Mumbai",
+    "message": "Testing dealership API route manually.",
+    "status": "Contacted",
+    "createdAt": "2026-07-17T04:05:04.147Z",
+    "updatedAt": "2026-07-17T04:05:42.391Z"
+  },
+  {
+    "_id": "inq-1784261599813",
+    "name": "Rajeev",
+    "email": "info.rajeevrana2005@gmail.com",
+    "phone": "8539002276",
+    "businessType": "Dealer",
+    "companyName": "Rana Tiles",
+    "city": "Delhi",
+    "message": "",
+    "status": "Contacted",
+    "createdAt": "2026-07-17T04:13:19.813Z",
+    "updatedAt": "2026-07-18T12:56:57.138Z"
+  }
+]

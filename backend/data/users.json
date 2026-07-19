@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "usr-admin-1",
+    "name": "Rajeev Rana (Owner)",
+    "email": "admin@test.com",
+    "password": "$2a$10$hz6lb2iPX1hDtMSS3Nmmv.BYjLl3cKwVXpOjRtIAhX3cUMr.q40hy",
+    "role": "admin",
+    "phone": "+91 98765 43210",
+    "companyName": "ABC Tiles & Ceramics Premium Store",
+    "gstin": "27AAAAA1111A1Z1",
+    "loyaltyPoints": 340,
+    "createdAt": "2026-07-17T04:05:23.785Z",
+    "updatedAt": "2026-07-17T04:05:23.785Z"
+  },
+  {
+    "_id": "usr-dealer-1",
+    "name": "Trade Dealer",
+    "email": "dealer@test.com",
+    "password": "$2a$10$hz6lb2iPX1hDtMSS3Nmmv.BYjLl3cKwVXpOjRtIAhX3cUMr.q40hy",
+    "role": "dealer",
+    "phone": "+91 99999 88888",
+    "companyName": "Rana & Partners Design",
+    "gstin": "27BBBBB2222B2Z2",
+    "loyaltyPoints": 120,
+    "createdAt": "2026-07-17T04:05:23.785Z",
+    "updatedAt": "2026-07-17T04:05:23.785Z"
+  },
+  {
+    "_id": "usr-client-1",
+    "name": "John Doe",
+    "email": "user@test.com",
+    "password": "$2a$10$hz6lb2iPX1hDtMSS3Nmmv.BYjLl3cKwVXpOjRtIAhX3cUMr.q40hy",
+    "role": "user",
+    "phone": "+91 98888 77777",
+    "companyName": "",
+    "gstin": "",
+    "loyaltyPoints": 20,
+    "createdAt": "2026-07-17T04:05:23.785Z",
+    "updatedAt": "2026-07-17T04:05:23.785Z"
+  }
+]

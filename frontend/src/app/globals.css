@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff; /* Crisp premium marble white background */
+  --foreground: #0c0c0e; /* Elegant obsidian dark gray for contrast */
+  --card-bg: rgba(248, 249, 250, 0.85); /* Smooth clean gray card background */
+  --card-border: rgba(212, 175, 55, 0.22); /* Sharp luxury golden border outline */
+}
+
+.dark {
+  --background: #09090b; /* Solid dark obsidian black for luxury brands */
+  --foreground: #f4f4f7; /* High contrast silver-white text */
+  --card-bg: rgba(18, 18, 22, 0.85); /* Rich charcoal slate cards */
+  --card-border: rgba(223, 184, 65, 0.25); /* Glowing golden border outline */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Brand Luxury Color Tokens */
+  --color-gold: #dfb841; /* Vibrant Gold Accent */
+  --color-gold-light: #f7eed2; /* Soft Champagne Highlight */
+  --color-gold-dark: #c59b27; /* Rich Amber Bronze */
+  --color-gold-accent: #d2b38c; /* Warm Brass Tint */
+  --color-charcoal-950: #08080a; /* Obsidian Midnight */
+  --color-charcoal-900: #0f0f12; /* Solid Midnight Slate */
+  --color-charcoal-800: #16161a; /* Dark Card Grey */
+  --color-charcoal-700: #222228; /* Border Grey */
+  --color-charcoal-600: #4a4a55; /* Muted Caption */
+  --color-charcoal-400: #9393a2; /* Soft Subtitle */
+  --color-charcoal-200: #e2e2e9; /* Light Dividers */
+  --color-charcoal-100: #f4f4f7; /* Off-white Accent */
+  
+  --font-serif: var(--font-playfair), Playfair Display, Georgia, serif;
+  --font-sans: var(--font-montserrat), Montserrat, Inter, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphism helpers - Optimized for GPU render passes */
+.glass-panel {
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--card-border);
+}
+
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--card-border);
+  border-radius: 1.25rem;
+  transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              border-color 0.25s ease, 
+              box-shadow 0.25s ease;
+  will-change: transform, border-color, box-shadow;
+}
+
+.glass-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(223, 184, 65, 0.08);
+  border-color: rgba(223, 184, 65, 0.5);
+}
+
+.dark .glass-card:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4), 0 0 15px rgba(223, 184, 65, 0.15);
+}
+
+/* Custom Scrollbar - Minimal luxury look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* Premium Gradient Text & Backgrounds */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #dfb841 0%, #f7eed2 50%, #c59b27 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-btn {
+  background: linear-gradient(135deg, #c59b27 0%, #dfb841 50%, #c59b27 100%);
+  background-size: 200% auto;
+  transition: background-position 0.3s ease, box-shadow 0.3s ease;
+  will-change: background-position, box-shadow;
+}
+
+.gold-gradient-btn:hover {
+  background-position: right center;
+  box-shadow: 0 4px 15px rgba(223, 184, 65, 0.35);
+}
+
+/* Smooth fade transitions for page navigations */
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
