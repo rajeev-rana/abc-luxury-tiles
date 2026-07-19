@@ -89,12 +89,16 @@ You can choose either Vercel or Netlify to host the Next.js frontend.
 1. Go to [Netlify](https://www.netlify.com/) and sign up.
 2. Click **Add new site** -> **Import an existing project**.
 3. Connect your Git provider and select your repository.
-4. Configure the Site settings:
+4. Netlify will automatically detect the settings from the `netlify.toml` file at the root:
    - **Base directory**: `frontend`
-   - **Build command**: `npm run build` or `next build`
-   - **Publish directory**: `frontend/.next` (Netlify usually auto-detects this for Next.js)
-5. Under **Environment variables**, add:
+   - **Build command**: `npm run build`
+   - **Publish directory**: `.next`
+5. Under **Environment variables**, click **Add Variable**:
    - Key: `NEXT_PUBLIC_API_URL`
-   - Value: `https://your-backend-name.onrender.com` (your backend service URL)
-6. Click **Deploy site**. Netlify will automatically build the Next.js app and assign a subdomain (e.g., `https://abc-luxury-tiles.netlify.app`).
+   - Value: `https://your-backend-name.onrender.com` (use the exact URL provided by Render/Railway for your backend, without a trailing slash)
+6. Click **Deploy site**. Netlify will automatically build the Next.js app and assign a subdomain (e.g., `https://abctiles.netlify.app`).
+
+> [!WARNING]
+> Without setting up the root `netlify.toml`, Netlify may host raw repository files directly, which exposes your codebase publically and returns 404s. Ensure `netlify.toml` is committed to the root of the repository before deploying.
+
 
